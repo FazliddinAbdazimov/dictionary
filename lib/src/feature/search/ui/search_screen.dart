@@ -102,10 +102,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                   ),
                                 },
-                                const SizedBox(width: 30),
+                                const SizedBox(width: 20),
                                 Expanded(
                                   child: Text(
-                                    "${_controller.text.trim()} (${definitions?[index].type})",
+                                    "${definitions?[index].emoji ?? ''} ${_controller.text.trim()} (${definitions?[index].type})",
                                     maxLines: 2,
                                     style: const TextStyle(
                                       fontWeight: FontWeight.w500,
